@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>标准的bootstrap模版</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<!--引入bootstrap样式表 -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+		<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+		<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<h2>表格<small>我还记得这个玩意！</small></h2>
+			<p class="text-danger">.table为任意表格添加基本样式（只有横向分割线）：</p>
+			<table class="table">
+				<caption>基本的表格布局</caption>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>FirstName</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Anna</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Debbie</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>John</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="text-danger">.table-striped类在tbody内添加斑马线形式的条纹（ie8不支持）：</p>
+			<table class="table table-striped">
+				<caption>条纹布局</caption>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>FirstName</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Anna</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Debbie</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>John</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="text-danger">.table-border类为所有单元格添加边框</p>
+			<table class="table table-striped table-bordered">
+				<caption>条纹布局</caption>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>FirstName</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Anna</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Debbie</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>John</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="text-danger">.table-hover类为tbody元素中的单元行执行悬停效果：</p>
+			<table class="table table-striped table-bordered table-hover">
+				<caption>条纹布局</caption>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>FirstName</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Anna</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Debbie</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>John</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="text-danger">.table-condensed类使得表格更加紧凑</p>
+			<table class="table table-striped table-bordered table-hover table-condensed">
+				<caption>条纹布局</caption>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>FirstName</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Anna</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Debbie</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>John</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>上下文类</h4>
+			<p>下表中所列出的上下文类允许您改变表格行或单个单元格的背景颜色。这些类可被应用到 <code>&lt;tr&gt;、&lt;td&gt;</code>或<code>&lt;th&gt;</code></p>
+			<ol>
+				<li>.active<small>对某一特定的行或单元格应用悬停颜色</small></li>
+				<li>.success<small>	表示一个成功的或积极的动作</small></li>
+				<li>.warning<small>表示一个需要注意的警告</small></li>
+				<li>.danger<small>表示一个危险的或潜在的负面动作</small></li>
+			</ol>
+			<table class="table table-bordered table-hover table-condensed">
+				<caption>上下文表格布局</caption>
+				<thead>
+					<tr>
+						<th>产品</th>
+						<th>付款日期</th>
+						<th>状态</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="active">
+						<td>产品1</td>
+						<td>23/11/2013</td>
+						<td>待发货</td>
+					</tr>
+					<tr class="success">
+						<td>产品2</td>
+						<td>23/11/2013</td>
+						<td>发货中</td>
+					</tr>
+					<tr class="warning">
+						<td>产品3</td>
+						<td>23/11/2013</td>
+						<td>待确认</td>
+					</tr>
+					<tr class="danger">
+						<td>产品4</td>
+						<td>23/11/2013</td>
+						<td>已退货</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>响应式表格</h4>
+			<p>通过把任意的.table包在.table-responsive class内，您可以让表格水平滚动以适应小型设备（小于768px）。当在大于 768px 宽的大型设备上查看时，您将看不到任何的差别。</p>
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-hover table-condensed">
+					<caption>响应式布局表格</caption>
+				<thead>
+					<tr>
+						<th>产品</th>
+						<th>付款日期</th>
+						<th>状态</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>产品1</td>
+						<td>23/11/2013</td>
+						<td>待发货</td>
+					</tr>
+					<tr>
+						<td>产品2</td>
+						<td>23/11/2013</td>
+						<td>发货中</td>
+					</tr>
+					<tr>
+						<td>产品3</td>
+						<td>23/11/2013</td>
+						<td>待确认</td>
+					</tr>
+					<tr>
+						<td>产品4</td>
+						<td>23/11/2013</td>
+						<td>已退货</td>
+					</tr>
+				</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<!-- 包括所有已编译的插件 -->
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	</body>
+</html>
+

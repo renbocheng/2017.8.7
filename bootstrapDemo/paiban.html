@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>标准的bootstrap模版</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<!--引入bootstrap样式表 -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+		<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+		<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>我是标题1 h1<small>我是副标题</small></h1>					
+					<h2>我是标题2 h2<small>我是副标题</small></h2>
+					<h3>我是标题3 h3<small>我是副标题</small></h3>
+					<h4>我是标题4 h4<small>我是副标题</small></h4>
+					<h5>我是标题5 h5<small>我是副标题</small></h5>
+					<h6>我是标题6 h6<small>我是副标题</small></h6>
+					<h2>引导主体副本</h2>
+					<div class="lead">这是一个演示引导主体副本用法的实例。这是一个演示引导主体副本用法的实例。这是一个演示引导主体副本用法的实例。这是一个演示引导主体副本用法的实例。这是一个演示引导主体副本用法的实例。这是一个演示引导主体副本用法的实例。这是一个演示引导主体副本用法的实例。这是一个演示引导主体副本用法的实例。</div>
+					<small>本行内容在标签内</small><br/>
+					<strong>本行内容在标签内</strong><br/>
+					<em>本行内容在标签内</em><br/>
+					<p class="text-left">向左对齐文本</p>
+					<p class="text-right">向右对齐文本</p>
+					<p class="text-center">居中的文本</p>
+					<p class="text-muted">本行内容是减弱的</p>
+					<p class="text-primary">本行内容带有一个primary class</p>
+					<p class="text-success">本行内容带有一个success class</p>
+					<p class="text-info">本行内容带有一个info class</p>
+					<p class="text-warning">本行内容带有一个warning class</p>
+					<p class="text-danger">本行内容带有一个 danger class</p>
+					<!--
+                    	作者：bochengren@163.com
+                    	时间：2017-07-28
+                    	描述：缩写
+                    -->
+                    <abbr title="I Am Hug" class="initialism">IAH</abbr>
+                    <!--
+                    	作者：bochengren@163.com
+                    	时间：2017-07-28
+                    	描述：地址（Address）
+使用 <address> 标签，您可以在网页上显示联系信息。由于 <address> 默认为 display:block;，您需要使用 
+标签来为封闭的地址文本添加换行。
+                    -->
+                    <address>
+                    	<strong>Some Company, Inc.</strong><br />
+                    	007 street<br />
+                    	Some City, State XXXXX<br />
+                    	<abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                    <address>
+                    	<strong> Full Name</strong><br />
+                    	<a href="mailto:#">mailto@somedomain.com</a>
+                    </address>
+                    <!--
+                    	作者：bochengren@163.com
+                    	时间：2017-07-28
+                    	描述：引用（Blockquote）
+您可以在任意的 HTML 文本旁使用默认的 <blockquote>。其他选项包括，添加一个 <small> 标签来标识引用的来源，使用 class .pull-right 向右对齐引用。下面的实例演示了这些特性：
+                    -->
+                    <blockquote>
+                    	<p>
+                    		这是一个默认的引用实例。这是一个默认的引用实例。这是一个默认的引用实例。这是一个默认的引用实例。这是一个默认的引用实例。这是一个默认的引用实例。这是一个默认的引用实例。这是一个默认的引用实例。
+                    	</p>
+                    </blockquote>
+                    <blockquote>
+                    	这是一个带有源标题的引用。
+                    	<small>Someone famous in<cite title="Source Title">Source Title</cite></small>
+                    </blockquote>
+                    <blockquote class="pull-right">
+                    	这是一个向右对齐的引用。
+                    	<small>Someone famous in<cite title="Source Title">Source Title</cite></small>
+                    </blockquote>
+                    <!--
+                    	作者：bochengren@163.com
+                    	时间：2017-07-28
+                    	描述：列表
+Bootstrap 支持有序列表、无序列表和定义列表。
+有序列表：有序列表是指以数字或其他有序字符开头的列表。
+无序列表：无序列表是指没有特定顺序的列表，是以传统风格的着重号开头的列表。如果您不想显示这些着重号，您可以使用 class .list-unstyled 来移除样式。您也可以通过使用 class .list-inline 把所有的列表项放在同一行中。
+定义列表：在这种类型的列表中，每个列表项可以包含 <dt> 和 <dd> 元素。<dt> 代表 定义术语，就像字典，这是被定义的属于（或短语）。接着，<dd> 是 <dt> 的描述。您可以使用 class dl-horizontal 把 <dl> 行中的属于与描述并排显示
+                    -->
+                    <h4>有序列表<small>四条仅有</small></h4>
+                    <ol>
+                    	<li>Item 1</li>
+                    	<li>Item 2</li>
+                    	<li>Item 3</li>
+                    	<li>Item 4</li>
+                    </ol>
+                    <h4>无序列表<small>也有四条</small></h4>
+                    <ul>
+                    	<li>Item 1</li>
+                    	<li>Item 2</li>
+                    	<li>Item 3</li>
+                    	<li>Item 4</li>
+                    </ul>
+                    <h4>未定义样式列表<small>怎么还是四条</small></h4>
+                    <ul class="list-unstyled">
+                    	<li>Item 1</li>
+                    	<li>Item 2</li>
+                    	<li>Item 3</li>
+                    	<li>Item 4</li>
+                    </ul>
+                    <h4>内联列表<small>其实还是四条</small></h4>
+                    <ul class="list-inline">
+                    	<li>Item 1</li>
+                    	<li>Item 2</li>
+                    	<li>Item 3</li>
+                    	<li>Item 4</li>
+                    </ul>
+                    <h4>定义列表<small>又是四条</small></h4>
+                    <dl>
+                    	<dt>Description 1</dt>
+                    	<dd>Item 1</dd>
+                        <dt>Description 2</dt>
+                        <dd>Item 2</dd>
+                    </dl>
+                    <h4>水平的定义列表<small>你赢了</small></h4>
+                    <dl class="dl-horizontal">
+                    	<dt>Description 1</dt>
+                    	<dd>Item 1</dd>
+                    	<dt>Description 2</dt>
+                    	<dd>Item 2</dd>
+                    </dl>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<!-- 包括所有已编译的插件 -->
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	</body>
+</html>
